@@ -1,0 +1,16 @@
+.mainheader{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+   display: inline-block;
+   width: 2rem;
+}
+.hambuger{
+    height: 4px;
+    width: 100%
+    content: "";
+}
+.navbar{
+    display: none;
+}
