@@ -1,16 +1,93 @@
+.root{
+    box-sizing: border-box;
+    background-color: hsl(36, 100%, 99%);
+}
+body{
+    margin: 0.8rem;
+}
+.logo{
+    display: inline-block;
+}
 .mainheader{
     display: flex;
     justify-content: space-between;
+    margin: 1.2rem 0px;
+}
+#input{
+    display: none;
+  
 }
 .container{
-   display: inline-block;
+  position: relative; 
    width: 2rem;
 }
 .hambuger{
-    height: 4px;
-    width: 100%
+    position: absolute;
+    top: 1.125rem;
+    display: inline-block;
+    background-color: black;
+    margin-bottom: 0.4rem;
+    height: 3px;
+    width: 100%   
+}
+.hambuger::before{
+    position: absolute;
     content: "";
+    display: block;
+    background-color: black;
+    margin-top: -0.4rem;
+    height: 3px;
+    width: 100% 
+}
+.hambuger::after{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: black;
+    margin-top: 0.4rem;
+    height: 3px;
+    width: 100% 
 }
 .navbar{
     display: none;
+}
+#input:checked ~ .navbar{
+    display: block;
+}
+img{
+    width: 100%;
+}
+.header_one{
+    font-weight: 1000;
+    font-size: 2.05rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    margin: 0px;   
+    padding-block: 1rem;
+    line-height: 2rem;
+}
+.paragraph_one{
+    color: hsl(236, 13%, 42%);
+    line-height: 1.5rem;
+    margin: 0px;
+    font-size: 15px;
+}
+.btn{
+    padding: 1rem;
+    letter-spacing: 0.3rem;
+    margin: 1rem 0px;
+    background-color: hsl(5, 85%, 63%);
+    border-color: 1px solid hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+}
+#section_two{
+    background-color: hsl(240, 100%, 5%);
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header_two{
+    color: hsl(35, 77%, 62%);
+    margin: 0px;
+}
+.sub_header_one{
+    color: hsl(36, 100%, 99%);
 }
